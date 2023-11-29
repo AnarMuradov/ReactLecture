@@ -3,6 +3,8 @@ import './App.css';
 import Axios from './components/Axios';
 import HookCounter from './components/HookCounter';
 import MyLogin from './components/MyLogin';
+import Usereduce from './components/UseReduce';
+import Useref from './components/UseRef';
 import UseMemo from './components/Usememo';
 
 function App() {
@@ -12,6 +14,12 @@ function App() {
   <HookCounter/>
   <MyLogin/>
   <UseMemo/>
+  <Useref/>
+  <hr/>
+  <br/>
+  <br/>
+  <br/>
+  <Usereduce/>
     </div>
   );
 }
