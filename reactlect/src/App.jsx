@@ -8,6 +8,12 @@ import Useref from './components/UseRef';
 import UseMemo from './components/Usememo';
 
 function App() {
+
+function darkmode(){
+  document.body.classList.toggle("dark")
+}
+
+
   return (
     <div className="App">
   <Axios/>
@@ -20,6 +26,7 @@ function App() {
   <br/>
   <br/>
   <Usereduce/>
+    <button onClick={darkmode}>Website Mode</button>
     </div>
   );
 }

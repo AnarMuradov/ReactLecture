@@ -1,5 +1,5 @@
 import React, { useReducer } from "react";
-
+import style from "./style.module.scss"
 function reducer(state, action) {
   switch (action.type) {
     case "inc":
@@ -21,12 +21,14 @@ const Usereduce = () => {
   function decrease(payload) {
     dispatch({ type: "dec", payload });
   }
-
+const styleh1={
+  color:"red"
+}
   return (
     <div>
-      <h1>{state.count}</h1>
-      <button onClick={() => increase(2)}>+</button>
-      <button onClick={() => decrease(2)}>-</button>
+      <h1 style={styleh1}>{state.count}</h1>
+      <button className={style.plas} onClick={() => increase(2)}>+</button>
+      <button style={{backgroundColor:"red"}} onClick={() => decrease(2)}>-</button>
     </div>
   );
 };
